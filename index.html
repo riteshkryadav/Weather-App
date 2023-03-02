@@ -6,38 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather API</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
-    integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  <link rel="stylesheet" href="./css/style.css" />
+ 
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <section class=" text-center text-light">
-    <div class="py-3 fs-1 fw-bolder " id="country">
+  <section class="container-weather">
+
+    <div class="city">
+      <img class="nav-logo-upload" src="./images/upload-icon.svg" alt="">
+      <input class="input-box" type="text" id="input" value="Mumbai" />
+      <img class="nav-logo nav-logo-upload " src="./images/menu.svg" alt="">
     </div>
-    <div class="py-3 fs-2 " id="city">
-    </div>
-    <div class="justify-content-center temprature-conteainer d-flex">
-      <div id="icon" class="icon pt-3">
-          </div>
-      <div class="temprature ">
-        <h1 id="temp">
-          
-        </h1>
-        <p class="fs-3 " id="feels-like">
-        </p>
+
+    <div class="weather-report ">
+      <div id="icon" class="icon"></div>
+      <div class="temprature">
+        <span id="temp"></span><br>
+        <span class="" id="feels-like"></span>
       </div>
     </div>
-    <div class="about-weather">
-    </div>
 
-    <p class="fs-2">Make the most of nice weather <br>  that  I genrated for you. Or else</p>
+    <p class="for-you">
+      Make the most of this nice weather <br />
+      that I genrated for you. Or else
+    </p>
 
-
-    <input class="btn bg-body" type="text" name="" id="input">
-    <button class="btn btn-danger " onclick="result()"> Search</button>
   </section>
-  <script src="./js/script.js"></script>
+  <script src="./script/main.js"></script>
 </body>
+
 </html>

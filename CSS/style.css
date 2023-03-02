@@ -1,27 +1,81 @@
-body{
-background:rgb(55, 55, 255);
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.temp-image{
-    max-width: 100%;
-
-
+body {
+  font-family: "Great Vibes", cursive;
+  font-family: "Nunito", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: rgba(46, 46, 255, 0.862);
 }
 
-.image-text{
-    font-size: medium;
-    color: rgb(229, 183, 18);
-}
-.temprature{
-    padding:2rem 0 0 1rem ;
+.temp-image {
+  max-width: 100%;
 }
 
-
-.state{
-    color: rgb(187, 218, 73);
-    font-size: medium;
+.container-weather {
+  text-align: center;
+  color: white;
 }
 
-#feels-like{
-    color: aqua;
+.nav-logo-upload {
+  max-width: 4rem;
+}
+
+.nav-logo {
+  filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(278deg)
+    brightness(109%) contrast(100%);
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.input-box {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.862);
+}
+
+.input-box:hover {
+  cursor: pointer;
+}
+
+.weather-report {
+  justify-content: center;
+  display: flex;
+  font-size: xx-large;
+}
+
+.icon {
+  padding: 2rem 0 0 0;
+  width: 20rem;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.temprature {
+  padding: 2.5rem 0 2.5rem 1rem;
+}
+
+#feels-like {
+  color: aqua;
+}
+
+.for-you {
+  font-size: 32px;
+}
+
+#temp {
+  font-size: 7rem;
 }
