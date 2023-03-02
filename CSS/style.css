@@ -2,15 +2,26 @@ body{
 background:rgb(55, 55, 255);
 }
 
-.icon img{
+.temp-image{
     max-width: 100%;
-  height: 100px;
+
+
 }
 
-#country{
-    font-size: xx-large;
+.image-text{
+    font-size: medium;
+    color: rgb(229, 183, 18);
+}
+.temprature{
+    padding:2rem 0 0 1rem ;
 }
 
-#city{
-    font-size: x-large;
+
+.state{
+    color: rgb(187, 218, 73);
+    font-size: medium;
+}
+
+#feels-like{
+    color: aqua;
 }
