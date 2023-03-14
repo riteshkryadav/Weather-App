@@ -37,7 +37,8 @@ body {
   padding: 2rem;
 }
 
-.input-box {
+#input {
+    outline: none;
   text-align: center;
   border: none;
   background-color: transparent;
@@ -78,4 +79,22 @@ body {
 
 #temp {
   font-size: 7rem;
+}
+
+#places{
+  opacity: 0;
+  /* color: aliceblue; */
+  border-radius: 1rem;
+  /* background-color: white; */
+  height: 6rem;
+  overflow: scroll;
+}
+#places li{
+  list-style: none;
+  /* color:white; */
+}
+.dropDown {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
 }
