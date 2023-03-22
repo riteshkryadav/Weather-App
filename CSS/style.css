@@ -83,15 +83,12 @@ body {
 
 #places{
   opacity: 0;
-  /* color: aliceblue; */
   border-radius: 1rem;
-  /* background-color: white; */
   height: 6rem;
   overflow: scroll;
 }
 #places li{
   list-style: none;
-  /* color:white; */
 }
 .dropDown {
   font-size: 2rem;
