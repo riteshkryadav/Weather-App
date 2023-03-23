@@ -1,6 +1,6 @@
 let city;
-var cursor = true;
-let dropdown_city;
+let cursor = true;
+let dropdownCity;
 function reveal() {
   if (cursor) {
     document.getElementById("places").style.opacity = 1;
@@ -16,7 +16,7 @@ for (let i = 0; i < dropDown.length; i++) {
   dropDown[i].addEventListener("click", () => {
     document.getElementById("input").value = dropDown[i].innerHTML;
     city = document.getElementById("input").value;
-    dropdown_city = dropDown[i].innerHTML;
+    dropdownCity = dropDown[i].innerHTML;
     getWeatherData();
     
     if (cursor) {
@@ -40,8 +40,8 @@ async function getWeatherData() {
         }
 
         );
-        for(let i = 0;i<response.length;i++){
-            if(response[i].location === dropdown_city) {
+        for(let i = 0; i<response.length; i++){
+            if(response[i].location === dropdownCity) {
                 console.log(response[i]);
                 document.getElementById("temp").innerHTML = response[i].temp_c + "°C";
                 document.getElementById("feels-like").innerHTML = "Feels  " + response[i].feelsLikeC + "°C";
